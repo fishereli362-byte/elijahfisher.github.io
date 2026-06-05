@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Volt & Stride | Book a Personal Training Session | Elijah Fisher Fitness</title>
+<meta name="description" content="Volt and Stride offers personal training, HIIT, and calisthenics classes in Cape Town. Book your session today and start building real strength.">
+
+    <!-- this is the Media tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./CSS/stylesheet.CSS">
+    <!--this is the link to my style sheet through my CSS file-->
+
+<!-- this is the link to my style sheet my Js -->
+
+</head>
+<body>
+    
+
+    <!-- Join Now Button -->
+    
+<nav class="navbar">
+    <div class="nav-container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="./Assets/Logo V&S.png" alt="Volt & Stride Logo">
+            <span class="logo-text">VOLT & STRIDE</span>
+        </div>
+<!-- Menu Links -->
+        <ul class="nav-menu">
+            <li><a href="./Contact.html">Home</a></li>
+            <li><a href="./Workouts.html">Workouts</a></li>
+            <li><a href="./Gym.html">EXERCISES</a></li>
+            <li><a href="./Index.html">Contact</a></li>
+        </ul>
+
+
+      
+
+        <!-- Join Now Button -->
+        <a href="#" class="join-btn">
+            <button>ELECTRIFY</button>
+        </a>
+    </div>
+
+</ul>
+</nav>
+</div>
+<!--button is still in the div but isn't a list item
+stackoverflow, W3Schools, MDN Web docs
+--> 
+<div>
+
+
+</div>
+
+</nav>
+    <!--I want to make this text heading go into the background-->
+   
+
+
+
+<!-- HERO SECTION WITH TEXT OVERLAY -->
+<section id="hero-image" style="width: 100%; position: relative;">
+    <img src="./Assets/Gymbackground.jpg"
+         alt="Build the Discipline to Become Your Best."
+         style="width: 100%; height: 550px; object-fit: cover;">
+
+    <!-- Text Overlay - Left aligned with dark background -->
+    <div class="hero-text-overlay">
+        <h1>Build the Discipline<br>to Become<br>Your Best.</h1>
+        <p>Whether you're training in the gym or at home with bodyweight, I'll guide you every step of the way. No experience needed, just the commitment to start.</p>
+    </div>
+</section>
+
+<section>
+
+
+</section>
+
+<!-- New Designe for form and video-->
+
+
+
+<section class="engage-section">
+  <div class="engage-container">
+    <p class="section-label"></p>
+
+    <h2 class="engage-title">
+      WATCH &amp;<br>
+      ENLIST
+    </h2>
+
+    <div class="engage-tabs">
+      <button class="engage-tab active" onclick="showContent('watch')">
+        <span class="tab-icon">▶</span>
+        WATCH
+      </button>
+
+      <button class="engage-tab" onclick="showContent('enlist')">
+        <span class="tab-icon">▣</span>
+        ENLIST
+      </button>
+    </div>
+
+    <div class="engage-content">
+      <div id="watch-content" class="content-panel active">
+        <div class="video-wrapper">
+          <img
+            src="https://img.youtube.com/vi/QU8mTR5iPLM/maxresdefault.jpg"
+            alt="YouTube Thumbnail"
+            class="video-thumbnail"
+          >
+          <a
+            href="https://www.youtube.com/watch?v=QU8mTR5iPLM"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="play-button"
+          >
+            ▶
+          </a>
+        </div>
+      </div>
+
+      <div id="enlist-content" class="content-panel">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSc-AQRWN88HxGrXl13KE7mmkmjDvTJ7cy7RdZgJJ7VybgogGA/viewform?embedded=true"
+          class="form-frame"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Loading…
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- experiment for the slide -->
+
+
+
+</section>  
+
+<section>
+
+<div class="car-wrap">
+  <p class="car-label">Volt & Stride</p>
+  <h2 class="car-title">CAROUSEL <span>&amp;</span><br>workout options</h2>
+
+  <div class="carousel" id="carousel">
+
+    <!-- Side arrow buttons (inside carousel so they sit on the image) -->
+    <button class="arr-btn" id="prev" aria-label="Previous slide">&#8592;</button>
+    <button class="arr-btn" id="next" aria-label="Next slide">&#8594;</button>
+
+    <div class="track" id="track">
+
+      <!-- Slide 1: Calisthenics -->
+      <div class="slide s1">
+        <div class="slide-bg">
+          <img src="./Assets/slide 1 calisthenics.jpg" alt="Calisthenics workout — master your bodyweight with Volt and Stride">
+        </div> 
+        <!--took out the slide overlay-->
+        
+        <div class="slide-content">
+          <span class="slide-tag">Calisthenics</span>
+          <h3 class="slide-heading">Master your<br>bodyweight</h3>
+          <p class="slide-sub">Build strength with zero equipment</p>
+        </div>
+      </div>
+
+      <!-- Slide 2: Gym -->
+      <div class="slide s2">
+        <div class="slide-bg">
+          <img src="./Assets/slide 2 push your limits.jpg" aria-hidden="true">
+        </div>
+         <!--took out the slide overlay-->
+        
+        <div class="slide-content">
+          <span class="slide-tag">Gym</span>
+          <h3 class="slide-heading">Push your<br>limits</h3>
+          <p class="slide-sub">Progressive overload for maximum gains</p>
+        </div>
+      </div>
+
+      <!-- Slide 3: HIIT -->
+      <div class="slide s3">
+        <div class="slide-bg">
+          <img src="./Assets/slide 3 electrify your workout.jpg" aria-hidden="true">
+        </div>
+       <!--took out the slide overlay-->
+        <div class="slide-content">
+          <span class="slide-tag">HIIT</span>
+          <h3 class="slide-heading">Electrify your<br>training</h3>
+          <p class="slide-sub">High intensity intervals, maximum burn</p>
+        </div>
+      </div>
+
+      <!-- Slide 4: Recovery -->
+      <div class="slide s4">
+        <div class="slide-bg">
+          <img src="./Assets/slide 4 for rest and rebuild.avif" aria-hidden="true">
+        </div>
+        
+        <div class="slide-content">
+          <span class="slide-tag">Recovery</span>
+          <h3 class="slide-heading">Rest &amp;<br>rebuild</h3>
+          <p class="slide-sub">Recovery is where growth happens</p>
+        </div>
+         <!--took out the slide overlay-->
+         
+      </div>
+
+    </div><!-- /track -->
+  </div><!-- /carousel -->
+
+  <!-- Progress bar -->
+  <div class="progress">
+    <div class="progress-bar" id="pbar" style="width: 0%;"></div>
+  </div>
+
+  <!-- Dot indicators -->
+  <div class="controls">
+    <div class="dots" id="dots"></div>
+  </div>
+
+</div><!-- /car-wrap -->
+
+</section>
+   
+
+
+
+
+
+<!-- CHOOSE YOUR PATHWAY SECTION -->
+
+
+<section id="pathways" class="pathways-section">
+  <div class="pathways-container">
+    <h2 class="pathways-title">CHOOSE YOUR PATHWAY</h2>
+
+    <div class="pathway-cards">
+      <!-- Card 1: Gym Workouts -->
+      <div class="pathway-card gym">
+        <div class="card-bg">
+          <img src="./Assets/Strength training choice.webp" alt="Gym Workouts" class="card-img">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-icon">
+          <img src="./Assets/dumbbell icon for pathway.png" alt="Gym Icon" class="icon-img">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">GYM WORKOUTS</h3>
+          <p class="card-text">
+            Through progressive overload, and always training harder than last time.  
+            My gym program tracks focus on compound movements: Bench Press, Squats, Deadlifts, and targeted machine isolation.
+          </p>
+          <a href="#" class="card-link">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Card 2: Calisthenics -->
+      <div class="pathway-card calisthenics">
+        <div class="card-bg">
+          <img src="./Assets/Calisthenics dip choice.png" alt="Calisthenics" class="card-img">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-icon">
+          <img src="./Assets/Calisthenics icon.jfif" alt="Calisthenics Icon" class="icon-img">
+        </div>
+        
+        <div class="card-content">
+          <h3 class="card-title">CALISTHENICS</h3>
+          <p class="card-text">
+            Master your bodyweight anytime, anywhere. Develop elite relative strength, mobility, and control  
+            through Push‑Ups, Pull‑Ups, Dips, Muscle‑Ups, and advanced static holds.
+          </p>
+         
+
+           <ul class="differnt type of workout ">
+          
+            <li><a href="./Contact.html"></a><a href="#" class="card-link">Learn More</a></li>
+            </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- this is a test to see if this makes it cleaner -->
+
+
+        
+</section>
+<!-- big code for the exceries -->
+
+<!-- this is a test to see if this works -->
+
+<!-- ====================== EXERCISES SECTION ====================== -->
+<section id="exercises" class="py-16 bg-[#0a1428]">
+    <div class="max-w-7xl mx-auto px-6">
+        
+        <h2 class="text-center text-4xl font-bold text-white mb-12">EXERCISES</h2>
+
+       
+            
+            <button onclick="showCategory('gym')" 
+                    id="btn-gym"
+                    class="category-btn">Calisthenics Exercises</button>
+        </div>
+
+        <!-- Calisthenics Grid -->
+        <div id="calisthenics-grid" class="exercise-grid">
+            <!-- Card 1 -->
+            <div class="exercise-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3>PUSH-UPS</h3>
+                    <span class="level-badge beginner">BEGINNER</span>
+                </div>
+                <p class="muscles">Chest, Triceps, Shoulders</p>
+                <p class="recommendation">4 sets of 15-20 reps</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="exercise-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3>PULL-UPS</h3>
+                    <span class="level-badge intermediate">INTERMEDIATE</span>
+                </div>
+                <p class="muscles">Lats, Biceps, Core</p>
+                <p class="recommendation">4 sets of 8-12 reps</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="exercise-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3>DIPS</h3>
+                    <span class="level-badge intermediate">INTERMEDIATE</span>
+                </div>
+                <p class="muscles">Chest, Triceps</p>
+                <p class="recommendation">3 sets of 10-15 reps</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="exercise-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3>PISTOL SQUATS</h3>
+                    <span class="level-badge advanced">EXTREME</span>
+                </div>
+                <p class="muscles">Quads, Glutes, Balance</p>
+                <p class="recommendation">3 sets of 5-8 reps/leg</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="exercise-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3>MUSCLE-UPS</h3>
+                    <span class="level-badge elite">ELITE</span>
+                </div>
+                <p class="muscles">Full Upper Body, Power</p>
+                <p class="recommendation">3 sets of 3-5 reps</p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="exercise-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3>HANDSTAND PUSH-UPS</h3>
+                    <span class="level-badge advanced">EXTREME</span>
+                </div>
+                <p class="muscles">Shoulders, Triceps, Core</p>
+                <p class="recommendation">3 sets of 5-8 reps</p>
+            </div>
+        </div>
+
+        <!-- Gym Exercises Grid (hidden by default) -->
+        <div id="gym-grid" class="exercise-grid hidden">
+            <!-- Add your 6 Gym cards here (same structure) -->
+            <div class="exercise-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3>BENCH PRESS</h3>
+                    <span class="level-badge intermediate">INTERMEDIATE</span>
+                </div>
+                <p class="muscles">Chest, Triceps, Shoulders</p>
+                <p class="recommendation">3-4 sets of 8-12 reps</p>
+            </div>
+
+            <!-- Repeat similar cards for Back Squats, Deadlifts, etc. -->
+            <!-- You can copy the structure above and change the text -->
+        </div>
+
+    </div>
+</section>
+
+<!--this is the Gym exceries part for the 6 cards-->
+
+ <!-- Category Buttons -->
+        <div class="flex justify-center gap-6 mb-12">
+            <button onclick="showCategory('calisthenics')" 
+                    id="btn-calisthenics"
+                    class="category-btn active">Weighted Exercises</button> 
+
+<!-- Gym Exercises Grid -->
+<div id="gym-grid" class="exercise-grid">
+
+    <!-- Card 1: Bench Press -->
+    <div class="exercise-card">
+        <div class="card-header">
+            <h3>BENCH PRESS</h3>
+            <span class="level-badge intermediate">INTERMEDIATE</span>
+        </div>
+        <div class="card-body">
+            <div class="info-group">
+                <span class="label">TARGET MUSCLES</span>
+                <p class="muscles">Chest, Triceps, Shoulders</p>
+            </div>
+            <div class="info-group">
+                <span class="label">RECOMMENDATION</span>
+                <p class="recommendation">3-4 sets of 8-12 reps</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2: Back Squats -->
+    <div class="exercise-card">
+        <div class="card-header">
+            <h3>BACK SQUATS</h3>
+            <span class="level-badge advanced">ADVANCED</span>
+        </div>
+        <div class="card-body">
+            <div class="info-group">
+                <span class="label">TARGET MUSCLES</span>
+                <p class="muscles">Quads, Glutes, Core</p>
+            </div>
+            <div class="info-group">
+                <span class="label">RECOMMENDATION</span>
+                <p class="recommendation">4 sets of 5-8 reps</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3: Deadlifts -->
+    <div class="exercise-card">
+        <div class="card-header">
+            <h3>DEADLIFTS</h3>
+            <span class="level-badge advanced">ADVANCED</span>
+        </div>
+        <div class="card-body">
+            <div class="info-group">
+                <span class="label">TARGET MUSCLES</span>
+                <p class="muscles">Hamstrings, Back, Core</p>
+            </div>
+            <div class="info-group">
+                <span class="label">RECOMMENDATION</span>
+                <p class="recommendation">3 sets of 5 reps</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 4: Weighted Pull-Ups -->
+    <div class="exercise-card">
+        <div class="card-header">
+            <h3>WEIGHTED PULL-UPS</h3>
+            <span class="level-badge intermediate">INTERMEDIATE</span>
+        </div>
+        <div class="card-body">
+            <div class="info-group">
+                <span class="label">TARGET MUSCLES</span>
+                <p class="muscles">Lats, Biceps</p>
+            </div>
+            <div class="info-group">
+                <span class="label">RECOMMENDATION</span>
+                <p class="recommendation">3 sets to failure</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 5: Shoulder Press -->
+    <div class="exercise-card">
+        <div class="card-header">
+            <h3>SHOULDER PRESS</h3>
+            <span class="level-badge beginner">BEGINNER</span>
+        </div>
+        <div class="card-body">
+            <div class="info-group">
+                <span class="label">TARGET MUSCLES</span>
+                <p class="muscles">Deltoids, Triceps</p>
+            </div>
+            <div class="info-group">
+                <span class="label">RECOMMENDATION</span>
+                <p class="recommendation">3 sets of 8-10 reps</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 6: Barbell Row -->
+    <div class="exercise-card">
+        <div class="card-header">
+            <h3>BARBELL ROW</h3>
+            <span class="level-badge intermediate">INTERMEDIATE</span>
+        </div>
+        <div class="card-body">
+            <div class="info-group">
+                <span class="label">TARGET MUSCLES</span>
+                <p class="muscles">Back, Biceps</p>
+            </div>
+            <div class="info-group">
+                <span class="label">RECOMMENDATION</span>
+                <p class="recommendation">3 sets of 10 reps</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<!-- user persona tria-->
+ <section class="carousel-section">
+
+  <p class="carousel-label">Volt &amp; Stride</p>
+  <h2 class="carousel-heading">User &amp; <span> Persona</span></h2>
+
+  <div class="carousel-wrapper">
+
+    <!-- LEFT ARROW -->
+    <button class="carousel-arrow" id="prevBtn" aria-label="Previous slide">&#8592;</button>
+
+    <!-- SLIDES -->
+    <div class="carousel-track-outer">
+      <div class="carousel-track" id="carouselTrack">
+
+        <!-- SLIDE 1 — replace src with your actual image path -->
+        <div class="carousel-slide active">
+          <img src="./Assets/Persona 3 .png" alt="User Persona — Volt and Stride target customer overview" />
+          <div>
+            <span class="slide-tag"></span>
+           
+          </div>
+        </div>
+
+        <!-- SLIDE 2 — replace src with your actual image path -->
+        <div class="carousel-slide">
+          <img src="./Assets/want you to succeed.png 2 .png" alt="Volt and Stride website — Carousel and Workout Options page" />
+          <div>
+        </div>
+
+      </div>
+    </div>
+
+   
+
+
+
+  <!-- Dots + progress bar -->
+  <div class="carousel-footer">
+    <div class="carousel-dots" id="carouselDots"></div>
+    <div class="progress-bar-track">
+      <div class="progress-bar-fill" id="progressFill"></div>
+    </div>
+    
+  </div>
+  
+  </div>
+<!-- Right Arrow -->
+<button class="carousel-arrow" id="nextBtn" aria-label="Next slide">&#8594;</button>
+
+</section>
+<!-- end of user perosna -->
+
+
+
+
+ 
+    <!--========FOOTER =======-->
+<footer>
+    <div class="footer-container">
+        
+        <!-- Left Side: Logo + Description -->
+        <div class="footer-left">
+            <div class="footer-logo">
+                <img src="./Assets/Logo V&S.png" alt="Volt & Stride Logo">
+                <h2>VOLT & STRIDE</h2>
+            </div>
+            <p>Hard work beats talent everytime. Whether you're lifting heavy in the gym or mastering your bodyweight anywhere, we provide the blueprint for your ultimate physical transformation. At the end of the day through all the pain and change you still get to me yourself but simply better</p>
+            
+            <!-- Social Media -->
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Middle: Quick Links -->
+        <div class="footer-middle">
+            <h3>QUICK LINKS</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Workouts</a></li>
+                <li><a href="#">Exercises</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Right Side: Contact Us -->
+        <div class="footer-right">
+            <h3>CONTACT US</h3>
+            <ul>
+                <li><span>📍</span> Cape Town, South Africa</li>       <!-- gronk reffernce, my information-->
+                <li><span>📞</span> 063 264 3289</li>
+                <li><span>💬</span> WhatsApp Me</li>
+                <li><span>✉️</span> voltandstride@gmail.com</li>
+            </ul>
+        </div>
+
+       
+
+    
+
+
+
+</section>
+
+<script src="./Js/script.js"></script>
+
+<script src="./volt_stride_carousel_example.html"></script>
+    
+</body>
+</html>

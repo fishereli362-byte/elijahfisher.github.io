@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="./CSS/stylesheet.CSS">
+
+
+<section class="engage-section">
+  <div class="engage-container">
+    <p class="section-label"></p>
+
+    <h2 class="engage-title">
+      WATCH &amp;<br>
+      ENLIST
+    </h2>
+
+    <div class="engage-tabs">
+      <button class="engage-tab active" onclick="showContent('watch')">
+        <span class="tab-icon">▶</span>
+        WATCH
+      </button>
+
+      <button class="engage-tab" onclick="showContent('enlist')">
+        <span class="tab-icon">▣</span>
+        ENLIST
+      </button>
+    </div>
+
+    <div class="engage-content">
+      <div id="watch-content" class="content-panel active">
+        <div class="video-wrapper">
+          <img
+            src="https://img.youtube.com/vi/QU8mTR5iPLM/maxresdefault.jpg"
+            alt="YouTube Thumbnail"
+            class="video-thumbnail"
+          >
+          <a
+            href="https://www.youtube.com/watch?v=QU8mTR5iPLM"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="play-button"
+          >
+            ▶
+          </a>
+        </div>
+      </div>
+
+      <div id="enlist-content" class="content-panel">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSc-AQRWN88HxGrXl13KE7mmkmjDvTJ7cy7RdZgJJ7VybgogGA/viewform?embedded=true"
+          class="form-frame"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Loading…
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="./Js/script.js"></script>
+
+</body>
+</html>
+
+
+<!-- experiment for the slide -->

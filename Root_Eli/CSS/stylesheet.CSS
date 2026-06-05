@@ -1,0 +1,1477 @@
+
+
+/* this is for the media Query break points */ 
+/* ── Desktop (default — write all your normal CSS here) ── */
+/* anything above 1024px uses your base styles */
+
+/* ── Tablet ── */
+@media (max-width: 1024px) {
+  /* adjustments for tablets */
+}
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  /* adjustments for phones */
+}
+/* Implementations of Responsiveness for Mobile */ 
+/* media  query breka points*/
+/* for all the different screen sizes*/ 
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;        /* hide the links */
+  }
+  .hamburger {
+    display: block;       /* show the burger icon */
+  }
+}
+/* for the font size */ 
+@media (max-width: 768px) {
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+}
+@media (max-width: 768px) {
+  .your-row-container {
+    flex-direction: column;
+  }
+}
+/* for the layout*/ 
+@media (max-width: 768px) {
+  .your-row-container {
+    flex-direction: column;
+  }
+}
+/* for the images */ 
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Implementations of Responsiveness for Mobile */ 
+
+@media (max-width: 768px) {
+  section {
+    padding: 40px 20px;   /* tighter on mobile */
+  }
+}
+
+
+/*this is for my menu bar */ 
+/* ====================== NAVIGATION BAR ====================== */
+.navbar {
+    position: sticky;     /* Makes it stay at the top when scrolling */
+    top: 0;               /* Very important without this, sticky often fails */
+    z-index: 1000;        /* Keeps it above other content */
+    background-color: #0a1428;   /* Deep navy */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    padding: 1rem 5%;
+    backdrop-filter: blur(8px);   /* Modern glass effect */
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    height: 55px;
+    width: auto;
+}
+
+.logo-text {
+    font-size: 1.65rem;
+    font-weight: 800;
+    color: #00b4ff;     /* Light blue accent */
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #00b4ff;
+}
+
+/* Join Now Button - Light Blue */
+.join-btn button {
+    background-color: #00b4ff;
+    color: #0a1428;
+    font-weight: 700;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.join-btn button:hover {
+    background-color: white;
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 992px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-menu {
+        gap: 1.5rem;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* end of menu */
+
+/* this is for the Google form and the Youtube Video*/
+.engage-section {
+  background: #050b1c;
+  min-height: 100vh;
+  padding: 40px 5vw;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.engage-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section-label {
+  color: #35dff5;
+  letter-spacing: 0.25em;
+  font-size: 0.9rem;
+  margin-bottom: 18px;
+}
+
+.engage-title {
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  line-height: 0.9;
+  margin: 0 0 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.engage-title br {
+  display: block;
+}
+
+.engage-tabs {
+  display: flex;
+  width: fit-content;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 40px;
+}
+
+.engage-tab {
+  background: transparent;
+  color: #a9b4c7;
+  border: none;
+  padding: 18px 42px;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.25s ease;
+}
+
+.engage-tab.active {
+  background: #27dff3;
+  color: #07111f;
+  font-weight: 700;
+}
+
+.engage-tab:not(.active):hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+.engage-content {
+  width: 100%;
+  max-width: 1240px;
+}
+
+.content-panel {
+  display: none;
+}
+
+.content-panel.active {
+  display: block;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  aspect-ratio: 16 / 9;
+  background: #222;
+  overflow: hidden;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: rgba(39, 223, 243, 0.95);
+  color: #07111f;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 0 25px rgba(39, 223, 243, 0.5);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.play-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+  background: #55ebff;
+}
+
+.form-frame {
+  width: 100%;
+  height: 900px;
+  border: 0;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .engage-section {
+    padding: 24px 16px;
+  }
+
+  .engage-title {
+    font-size: 3rem;
+  }
+
+  .engage-tabs {
+    width: 100%;
+  }
+
+  .engage-tab {
+    flex: 1;
+    justify-content: center;
+    padding: 16px 12px;
+    font-size: 0.85rem;
+  }
+
+  .play-button {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5rem;
+  }
+
+  .form-frame {
+    height: 700px;
+  }
+}
+
+/* this is for the Google form and the Youtube Video*/
+
+
+
+/* ====================== RESET & BASE ====================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #e2e8f0;
+    background-color: #0a1428;
+}
+
+/* this is for the work out cards and styles to choice from*/
+
+/* Flip Card Styles */
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+/* Optional: Slight lift on hover */
+.flip-card:hover {
+    transform: translateY(-8px);
+    transition: transform 0.4s ease;
+}
+/*end of the style for the choice of excercies*/ 
+
+
+
+
+/* ====================== NAVIGATION ====================== this is for the motivation and intro into the website*/
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0a1428;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    padding: 1rem 5%;
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    height: 55px;
+    width: auto;
+}
+
+.logo-text {
+    font-size: 1.65rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #00b4ff;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2.2rem;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.nav-menu a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #00b4ff;
+}
+
+/* Join Now Button */
+.join-btn button {
+    background-color: #00b4ff;
+    color: #0a1428;
+    font-weight: 700;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0, 180, 255, 0.4);
+}
+
+.join-btn button:hover {
+    background-color: #ffffff;
+    color: #0a1428;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 180, 255, 0.5);
+}
+
+/* Responsive Navigation */
+@media (max-width: 992px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-menu {
+        gap: 1.5rem;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 1.2rem;
+        font-size: 1rem;
+    }
+    
+    .logo-text {
+        font-size: 1.4rem;
+    }
+}
+
+/* ====================== HERO SECTION ====================== */
+#hero-image {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+
+#hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.75);
+}
+
+.hero-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    max-width: 650px;
+    background: rgba(10, 20, 40, 0.75);
+    padding: 50px 55px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: left;
+}
+
+.hero-text-overlay h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text-overlay p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+/* Mobile Hero */
+@media (max-width: 768px) {
+    .hero-text-overlay {
+        left: 5%;
+        right: 5%;
+        padding: 35px 40px;
+    }
+    .hero-text-overlay h1 {
+        font-size: 3rem;
+    }
+    .hero-text-overlay p {
+        font-size: 1.15rem;
+    }
+}
+
+/* ====================== PATHWAYS SECTION ====================== */
+#pathways {
+    background-color: #0a1428;
+    padding: 80px 0;
+}
+
+.pathway-card {
+    position: relative;
+    height: 420px;
+    border-radius: 24px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.pathway-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0, 180, 255, 0.3);
+}
+
+.pathway-card img {
+    transition: transform 0.6s ease;
+}
+
+.pathway-card:hover img {
+    transform: scale(1.08);
+}
+
+
+
+/*Pathway Section CSS */ 
+/* PATHWAYS SECTION STYLES */
+.pathways-section {
+  padding: 4rem 1rem;
+  background-color: #0a1428;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.pathways-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pathways-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  letter-spacing: 0.1em;
+}
+
+.pathway-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* on medium+ screens, show cards side by side */
+@media (min-width: 768px) {
+  .pathway-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.pathway-card {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pathway-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-bg {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+}
+
+.card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-out;
+}
+
+.pathway-card:hover .card-img {
+  transform: scale(1.05);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9)
+  );
+}
+
+.card-icon {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 10;
+}
+
+.icon-img {
+  width: 48px;
+  height: 48px;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  color: white;
+  z-index: 10;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 0 0.6rem 0;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.card-link {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #00b4ff;
+  color: #00b4ff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 2rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pathway-card:hover .card-link {
+  background-color: #00b4ff;
+  color: white;
+}
+
+
+
+/*CSS for Pathway of Excercies*/
+
+
+/* ====================== EXERCISES SECTION ====================== */
+#exercises {
+    background-color: #0a1428;
+    padding: 80px 0;
+}
+
+.exercise-card:hover {
+    transform: translateY(-6px);
+    border-color: #00b4ff;
+    box-shadow: 0 10px 25px rgba(0, 180, 255, 0.15);
+}
+
+#exercises h2 {
+    color: white;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Category Buttons */
+.category-btn {
+    padding: 14px 36px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    background-color: #1a2338;
+    color: #e2e8f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.category-btn:hover {
+    background-color: #2a3750;
+}
+
+.category-btn.active {
+    background-color: #00b4ff;
+    color: #0a1428;
+    box-shadow: 0 6px 15px rgba(0, 180, 255, 0.5);
+}
+
+/* Exercise Grid */
+.exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 24px;
+}
+
+.exercise-card {
+    background-color: #1a2338;
+    border-radius: 16px;
+    padding: 24px;
+    color: white;
+    transition: all 0.3s ease;
+    border: 1px solid #2a3750;
+}
+
+.exercise-card:hover {
+    transform: translateY(-6px);
+    border-color: #00b4ff;
+    box-shadow: 0 10px 25px rgba(0, 180, 255, 0.15);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #2a3750;
+    padding-bottom: 16px;
+}
+
+.card-header h3 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    margin: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.level-badge {
+    padding: 5px 14px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.beginner     { background-color: #22c55e; color: #0a1428; }
+.intermediate { background-color: #3b82f6; color: white; }
+.advanced     { background-color: #f59e0b; color: #0a1428; }
+
+/* Card Content */
+.label {
+    display: block;
+    color: #94a3b8;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.muscles,
+.recommendation {
+    color: #e2e8f0;
+    font-size: 1.02rem;
+    margin: 0;
+}
+
+/* Hidden class for grid switching */
+.hidden {
+    display: none !important;
+}
+
+/* ====================== FOOTER ====================== */
+footer {
+    background-color: #0a1428;
+    color: white;
+    padding: 60px 40px 30px;
+    margin-top: 80px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.footer-logo img {
+    height: 50px;
+    width: auto;
+}
+
+.footer-logo h2 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #00b4ff;
+}
+
+.footer-left p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.social-icons a {
+    font-size: 1.8rem;
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-middle h3,
+.footer-right h3 {
+    color: #00b4ff;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.footer-middle ul,
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-middle li,
+.footer-right li {
+    margin-bottom: 12px;
+}
+
+.footer-middle a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-middle a:hover {
+    color: #00b4ff;
+}
+
+/* this is the CSS for the Java Script*/ 
+
+/* ============================================
+   VOLT & STRIDE — Carousel Styles
+   Usage: <link rel="stylesheet" href="carousel.css">
+============================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0a0f1e;
+  font-family: 'Arial Black', Arial, sans-serif;
+  padding: 2rem;
+}
+
+.car-wrap {
+  border-radius: 12px;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.car-label {
+  color: #00c8ff;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.75rem;
+}
+
+.car-title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.car-title span {
+  color: #00c8ff;
+}
+
+/* ── Carousel wrapper ── */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* ── Sliding track ── */
+.track {
+  display: flex;
+  transition: transform 0.75s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* ── Individual slide ── */
+.slide {
+  min-width: 100%;
+  position: relative;
+  height: 360px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.slide-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.15) 100%);
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+}
+
+.slide-tag {
+  display: inline-block;
+  background: #00c8ff;
+  color: #0a0f1e;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  padding: 3px 10px;
+  border-radius: 3px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.slide-heading {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.15;
+  margin-bottom: 0.4rem;
+}
+
+.slide-sub {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+/* ── Side arrow buttons ── */
+.arr-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.arr-btn:hover {
+  border-color: #00c8ff;
+  color: #00c8ff;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#prev { left: 14px; }
+#next { right: 14px; }
+
+/* ── Progress bar ── */
+.progress {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1px;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #00c8ff;
+  border-radius: 1px;
+  transition: width 0.1s linear;
+}
+
+/* ── Dot indicators ── */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 24px;
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dot.active {
+  background: #00c8ff;
+  width: 36px;
+}
+
+/* this is the tester */ 
+
+/* ============================================
+   VOLT & STRIDE — Carousel Styles
+   Usage: <link rel="stylesheet" href="carousel.css">
+============================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0a0f1e;
+  font-family: 'Arial Black', Arial, sans-serif;
+  padding: 2rem;
+}
+
+.car-wrap {
+  border-radius: 12px;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.car-label {
+  color: #00c8ff;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.75rem;
+}
+
+.car-title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.car-title span {
+  color: #00c8ff;
+}
+
+/* ── Carousel wrapper ── */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* ── Sliding track ── */
+.track {
+  display: flex;
+  transition: transform 0.75s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* ── Individual slide ── */
+.slide {
+  min-width: 100%;
+  position: relative;
+  height: 360px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.slide-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.15) 100%);
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+}
+
+.slide-tag {
+  display: inline-block;
+  background: #00c8ff;
+  color: #0a0f1e;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  padding: 3px 10px;
+  border-radius: 3px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.slide-heading {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.15;
+  margin-bottom: 0.4rem;
+}
+
+.slide-sub {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+/* ── Side arrow buttons ── */
+.arr-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.arr-btn:hover {
+  border-color: #00c8ff;
+  color: #00c8ff;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#prev { left: 14px; }
+#next { right: 14px; }
+
+/* ── Progress bar ── */
+.progress {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1px;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #00c8ff;
+  border-radius: 1px;
+  transition: width 0.1s linear;
+}
+
+/* ── Dot indicators ── */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 24px;
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dot.active {
+  background: #00c8ff;
+  width: 36px;
+}
+
+
+
+
+
+/* user peronsa */
+
+/* === CAROUSEL SECTION === */
+.carousel-section {
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carousel-label {
+  color: #00c8ff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.carousel-heading {
+  font-size: 2.4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 36px;
+}
+
+.carousel-heading span {
+  color: #00c8ff;
+}
+
+/* Wrapper holds track + both arrows */
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Arrow buttons */
+.carousel-arrow {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.25s, background 0.25s, transform 0.2s;
+  z-index: 2;
+}
+
+.carousel-arrow:hover {
+  border-color: #00c8ff;
+  background: rgba(0, 200, 255, 0.12);
+  transform: scale(1.08);
+}
+
+/* Track clips the slides */
+.carousel-track-outer {
+  overflow: hidden;
+  border-radius: 12px;
+  flex: 1;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.45, 0, 0.15, 1);
+}
+
+/* Individual slide */
+.carousel-slide {
+  min-width: 100%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16 / 7;
+  background: #111827;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  
+}
+
+
+
+/* Slide overlay text */
+.slide-overlay {
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+  z-index: 1;
+}
+
+.slide-tag {
+  display: inline-block;
+  background: #00c8ff;
+  color: #0a0f1e;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.slide-title {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.6);
+}
+
+.slide-subtitle {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.8);
+  margin-top: 6px;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+}
+
+/* Dots + progress bar */
+.carousel-footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.carousel-dot.active {
+  background: #00c8ff;
+  transform: scale(1.3);
+}
+
+/* Auto-advance progress bar */
+.progress-bar-track {
+  width: 100%;
+  max-width: 500px;
+  height: 3px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #00c8ff, #0066ff);
+  border-radius: 2px;
+  transition: width linear;
+}
+
+/* Responsive — mobile */
+@media (max-width: 768px) {
+  .carousel-heading {
+    font-size: 1.6rem;
+  }
+  .carousel-section {
+    padding: 40px 20px;
+  }
+  .slide-title {
+    font-size: 1.3rem;
+  }
+  .carousel-arrow {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+}
+/*user persona end */
