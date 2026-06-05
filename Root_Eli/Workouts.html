@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./CSS/stylesheet.CSS">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workouts</title>
+</head>
+<body>
+    <!-- CHOOSE YOUR PATHWAY SECTION  for the choice people want to make -->
+
+<!-- CHOOSE YOUR PATHWAY SECTION -->
+
+
+<section id="pathways" class="pathways-section">
+  <div class="pathways-container">
+    <h2 class="pathways-title">CHOOSE YOUR PATHWAY</h2>
+
+    <div class="pathway-cards">
+      <!-- Card 1: Gym Workouts -->
+      <div class="pathway-card gym">
+        <div class="card-bg">
+          <img src="./Assets/Strength training choice.webp" alt="Gym Workouts" class="card-img">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-icon">
+          <img src="./Assets/dumbbell icon for pathway.png" alt="Gym Icon" class="icon-img">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">GYM WORKOUTS</h3>
+          <p class="card-text">
+            Through progressive overload, and always training harder than last time.  
+            My gym program tracks focus on compound movements: Bench Press, Squats, Deadlifts, and targeted machine isolation.
+          </p>
+          <a href="#" class="card-link">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Card 2: Calisthenics -->
+      <div class="pathway-card calisthenics">
+        <div class="card-bg">
+          <img src="./Assets/Calisthenics dip choice.png" alt="Calisthenics" class="card-img">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-icon">
+          <img src="./Assets/Calisthenics icon.jfif" alt="Calisthenics Icon" class="icon-img">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">CALISTHENICS</h3>
+          <p class="card-text">
+            Master your bodyweight anytime, anywhere. Develop elite relative strength, mobility, and control  
+            through Push‑Ups, Pull‑Ups, Dips, Muscle‑Ups, and advanced static holds.
+          </p>
+          <a href="#" class="card-link">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- this is a test to see if this makes it cleaner -->
+
+
+        
+</section>
+<!-- big code for the exceries -->
+
+<!-- this is a test to see if this works -->
+
+<!-- ====================== EXERCISES SECTION ====================== -->
+<section id="exercises" class="py-16 bg-[#0a1428]">
+    <div class="max-w-7xl mx-auto px-6">
+        
+        <h2 class="text-center text-4xl font-bold text-white mb-12">EXERCISES</h2>
+
+       
+            
+            <button onclick="showCategory('gym')" 
+                    id="btn-gym"
+                    class="category-btn">GYM EXERCISES</button>
+        </div>
+
+        <!-- Calisthenics Grid -->
+        <div id="calisthenics-grid" class="exercise-grid">
+            <!-- Card 1 -->
+            <div class="exercise-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3>PUSH-UPS</h3>
+                    <span class="level-badge beginner">BEGINNER</span>
+                </div>
+                <p class="muscles">Chest, Triceps, Shoulders</p>
+                <p class="recommendation">4 sets of 15-20 reps</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="exercise-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3>PULL-UPS</h3>
+                    <span class="level-badge intermediate">INTERMEDIATE</span>
+                </div>
+                <p class="muscles">Lats, Biceps, Core</p>
+                <p class="recommendation">4 sets of 8-12 reps</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="exercise-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3>DIPS</h3>
+                    <span class="level-badge intermediate">INTERMEDIATE</span>
+                </div>
+                <p class="muscles">Chest, Triceps</p>
+                <p class="recommendation">3 sets of 10-15 reps</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="exercise-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3>PISTOL SQUATS</h3>
+                    <span class="level-badge advanced">EXTREME</span>
+                </div>
+                <p class="muscles">Quads, Glutes, Balance</p>
+                <p class="recommendation">3 sets of 5-8 reps/leg</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="exercise-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3>MUSCLE-UPS</h3>
+                    <span class="level-badge elite">ELITE</span>
+                </div>
+                <p class="muscles">Full Upper Body, Power</p>
+                <p class="recommendation">3 sets of 3-5 reps</p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="exercise-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3>HANDSTAND PUSH-UPS</h3>
+                    <span class="level-badge advanced">EXTREME</span>
+                </div>
+                <p class="muscles">Shoulders, Triceps, Core</p>
+                <p class="recommendation">3 sets of 5-8 reps</p>
+            </div>
+        </div>
+
+        <!-- Gym Exercises Grid (hidden by default) -->
+        <div id="gym-grid" class="exercise-grid hidden">
+            <!-- Add your 6 Gym cards here (same structure) -->
+            <div class="exercise-card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3>BENCH PRESS</h3>
+                    <span class="level-badge intermediate">INTERMEDIATE</span>
+                </div>
+                <p class="muscles">Chest, Triceps, Shoulders</p>
+                <p class="recommendation">3-4 sets of 8-12 reps</p>
+            </div>
+
+            <!-- Repeat similar cards for Back Squats, Deadlifts, etc. -->
+            <!-- You can copy the structure above and change the text -->
+        </div>
+
+    </div>
+</section>
+
+<!--this is the Gym exceries part for the 6 cards-->
+
+ <!-- Category Buttons -->
+        <div class="flex justify-center gap-6 mb-12">
+            <button onclick="showCategory('calisthenics')" 
+                    id="btn-calisthenics"
+                    class="category-btn active">CALISTHENICS</button> 
+
+<!-- Gym Exercises Grid -->
+<div id="gym-grid" class="exercise-grid">
+
+    <!-- Card 1: Bench Press -->
+    <div class="exercise-card">
+        <div class="card-header">
+            <h3>BENCH PRESS</h3>
+            <span class="level-badge intermediate">INTERMEDIATE</span>
+        </div>
+        <div class="card-body">
+            <div class="info-group">
+                <span class="label">TARGET MUSCLES</span>
+                <p class="muscles">Chest, Triceps, Shoulders</p>
+            </div>
+            <div class="info-group">
+                <span class="label">RECOMMENDATION</span>
+                <p class="recommendation">3-4 sets of 8-12 reps</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2: Back Squats -->
+    <div class="exercise-card">
+        <div class="card-header">
+            <h3>BACK SQUATS</h3>
+            <span class="level-badge advanced">ADVANCED</span>
+        </div>
+        <div class="card-body">
+            <div class="info-group">
+                <span class="label">TARGET MUSCLES</span>
+                <p class="muscles">Quads, Glutes, Core</p>
+            </div>
+            <div class="info-group">
+                <span class="label">RECOMMENDATION</span>
+                <p class="recommendation">4 sets of 5-8 reps</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3: Deadlifts -->
+    <div class="exercise-card">
+        <div class="card-header">
+            <h3>DEADLIFTS</h3>
+            <span class="level-badge advanced">ADVANCED</span>
+        </div>
+        <div class="card-body">
+            <div class="info-group">
+                <span class="label">TARGET MUSCLES</span>
+                <p class="muscles">Hamstrings, Back, Core</p>
+            </div>
+            <div class="info-group">
+                <span class="label">RECOMMENDATION</span>
+                <p class="recommendation">3 sets of 5 reps</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 4: Weighted Pull-Ups -->
+    <div class="exercise-card">
+        <div class="card-header">
+            <h3>WEIGHTED PULL-UPS</h3>
+            <span class="level-badge intermediate">INTERMEDIATE</span>
+        </div>
+        <div class="card-body">
+            <div class="info-group">
+                <span class="label">TARGET MUSCLES</span>
+                <p class="muscles">Lats, Biceps</p>
+            </div>
+            <div class="info-group">
+                <span class="label">RECOMMENDATION</span>
+                <p class="recommendation">3 sets to failure</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 5: Shoulder Press -->
+    <div class="exercise-card">
+        <div class="card-header">
+            <h3>SHOULDER PRESS</h3>
+            <span class="level-badge beginner">BEGINNER</span>
+        </div>
+        <div class="card-body">
+            <div class="info-group">
+                <span class="label">TARGET MUSCLES</span>
+                <p class="muscles">Deltoids, Triceps</p>
+            </div>
+            <div class="info-group">
+                <span class="label">RECOMMENDATION</span>
+                <p class="recommendation">3 sets of 8-10 reps</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 6: Barbell Row -->
+    <div class="exercise-card">
+        <div class="card-header">
+            <h3>BARBELL ROW</h3>
+            <span class="level-badge intermediate">INTERMEDIATE</span>
+        </div>
+        <div class="card-body">
+            <div class="info-group">
+                <span class="label">TARGET MUSCLES</span>
+                <p class="muscles">Back, Biceps</p>
+            </div>
+            <div class="info-group">
+                <span class="label">RECOMMENDATION</span>
+                <p class="recommendation">3 sets of 10 reps</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</section>
+</body>
+</html>
